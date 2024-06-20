@@ -1,5 +1,7 @@
 # Dockerize Laravel App
 
+https://github.com/aschmelyun/docker-compose-laravel/tree/main/src
+
 A simplified Docker Compose workflow that sets up a Laravel network of containers for local Laravel development with Adminer & PGAdmin.
 
 ## Usage
