@@ -36,7 +36,8 @@ RUN apk add --no-cache \
     oniguruma-dev \
     curl-dev \
     freetype-dev \
-    libpq-dev
+    libpq-dev \
+    git
 
 RUN docker-php-ext-install pgsql pdo pdo_pgsql mbstring exif zip soap pcntl bcmath curl zip opcache
 
