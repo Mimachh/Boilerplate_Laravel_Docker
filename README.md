@@ -89,3 +89,19 @@ Then, run the following commands to install your dependencies and start the dev 
 -   `docker compose run --rm --service-ports npm run dev`
 
 Want to build for production? Simply run `docker compose run --rm npm run build`.
+
+
+
+https://mindsers.blog/en/post/https-using-nginx-certbot-docker/
+
+
+## Activer le SSR de Inertia
+ - publier le fichier vendor :php artisan vendor:publish --provider="Inertia\ServiceProvider"
+
+ - utiliser comme url le network de supervisor : http://supervisor:13714
+
+ - rendre public dans le compose le port 13714 de supervisor
+
+
+## En cas de problème 502 bad gateway 
+ça peut être le serveur nginx qui n'est pas suffisament puissant au niveau des entêtes. auquel cas il suffit de décommenter : - ./dockerfiles/nginx/nginx.conf:/etc/nginx/nginx.conf:ro

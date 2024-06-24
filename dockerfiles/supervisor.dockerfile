@@ -1,7 +1,9 @@
 FROM php:8.2-fpm-alpine
 
 RUN apk add --no-cache \
-    libpq-dev
+    libpq-dev \
+    nodejs \
+    npm
 
 # RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install pgsql pdo pdo_pgsql
